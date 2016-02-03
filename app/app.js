@@ -3,5 +3,5 @@ import Greeting from "./greeting";
 
 React.render(
 	<Greeting name="World"/>,
-	document.body
+	document.getElementById("greeting")
 );
