@@ -8,7 +8,7 @@ I'll add more usefull libraries in future...
 - Node.js
 - npm
 
-## Start app
+## Setup app
 
 ```
 git init
