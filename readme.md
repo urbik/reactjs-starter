@@ -68,4 +68,5 @@ npm install react-hot-loader --save-dev
 react
 ```
 npm install react --save
+npm install react react-dom --save
 ```
