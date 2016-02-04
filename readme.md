@@ -1,6 +1,11 @@
 # React.js Starter
 
-This is personal React.js starter project with webpack, webpack-dev-server, react-ho-loader and ES6 babel loader.
+This is personal React.js starter project with webpack, webpack-dev-server, react-hot-loader and ES6 babel loader.
+
+Other libraries/loaders:
+- style/css loader
+- less and less loader
+
 I'll add more usefull libraries in future...
 
 ## Requirements
@@ -62,7 +67,15 @@ npm install --save-dev babel-preset-react
 other loaders
 ```
 npm install file-loader --save-dev
+npm install style-loader --save-dev
+npm install css-loader --save-dev
+npm install less-loader --save-dev
 npm install react-hot-loader --save-dev
+```
+
+other npm
+```
+npm install less --save-dev
 ```
 
 react

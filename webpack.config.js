@@ -1,5 +1,4 @@
 module.exports = {
-	//context: __dirname + "/app",
 	entry: {
 		javascript: "./app/app.js",
 		html: "./app/index.html",
@@ -12,6 +11,10 @@ module.exports = {
 
 	module: {
 		loaders: [
+			{
+				test: /\.less$/,
+				loader: "style!css!less"
+			},
 			{
 				test: /.jsx?$/,
 				loader: 'react-hot',
