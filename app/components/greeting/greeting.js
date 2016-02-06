@@ -1,4 +1,6 @@
-import React from "react";
+import React from "react"
+
+import "./greeting.less"
 
 export default React.createClass({
 	render: function() {
@@ -7,5 +9,5 @@ export default React.createClass({
 				<h1>Hello, {this.props.name}!</h1>
 			</div>
 		);
-	},
-});
+	}
+})

@@ -5,6 +5,8 @@ This is personal React.js starter project with webpack, webpack-dev-server, reac
 Other libraries/loaders:
 - style/css loader
 - less and less loader
+- url loader
+- bootstrap
 
 I'll add more usefull libraries in future...
 
@@ -67,6 +69,7 @@ npm install --save-dev babel-preset-react
 other loaders
 ```
 npm install file-loader --save-dev
+npm install url-loader --save-dev
 npm install style-loader --save-dev
 npm install css-loader --save-dev
 npm install less-loader --save-dev
@@ -76,6 +79,7 @@ npm install react-hot-loader --save-dev
 other npm
 ```
 npm install less --save-dev
+npm install bootstrap-less --save
 ```
 
 react
