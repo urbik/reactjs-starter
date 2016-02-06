@@ -1,3 +1,5 @@
+var autoprefixer = require('autoprefixer');
+
 module.exports = {
 	entry: {
 		javascript: "./app/app.js",
@@ -18,28 +20,23 @@ module.exports = {
 			{ test: /\.eot$/, loader: "file-loader" },
 			{ test: /\.svg$/, loader: "file-loader" },
 
-			// OTHER
-			{
-				test: /\.less$/,
-				loader: "style!css!less"
-			},
-			{
-				test: /.jsx?$/,
-				loader: 'react-hot',
-				exclude: /node_modules/,
-			},
+			// STYLESHEETS & IMGS
+			{ test: /\.less$/, loader: "style!css!less" },
+			{ test: /\.png$/, loader: "url-loader?limit=100000" },
+			{ test: /\.jpg$/, loader: "file-loader" },
+
+			// JS
+			{ test: /.jsx?$/, loader: 'react-hot', exclude: /node_modules/ },
 			{
 				test: /.jsx?$/,
 				loader: 'babel-loader',
 				exclude: /(node_modules|bower_components)/,
-				query: {
-					presets: ['es2015', 'react']
-				}
+				query: { presets: ['es2015', 'react'] }
 			},
-			{
-				test: /\.html$/,
-				loader: "file?name=[name].[ext]",
-			}
+
+			// OTHER
+			{ test: /\.html$/, loader: "file?name=[name].[ext]" }
 		]
 	},
+	postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ]
 };

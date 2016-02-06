@@ -4,8 +4,8 @@ import ReactDOM from "react-dom"
 import Greeting from "./components/greeting/greeting.js"
 
 // STYLESHEETS DEPENDENCIES
-import 'bootstrap-less/bootstrap/bootstrap.less';
 import "./app.less"
+import 'bootstrap-less/bootstrap/bootstrap.less';
 
 ReactDOM.render(
 	<Greeting options={{value: "world"}}/>,

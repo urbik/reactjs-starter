@@ -2,11 +2,13 @@
 
 This is personal React.js starter project with webpack, webpack-dev-server, react-hot-loader and ES6 babel loader.
 
-Other libraries/loaders:
+Other libraries/loaders/functionalities:
 - style/css loader
 - less and less loader
 - url loader
 - bootstrap
+- embed png data uri
+- minify scripts & css
 
 I'll add more usefull libraries in future...
 
@@ -23,9 +25,14 @@ npm install --dev
 ```
 
 ## Run app
-
 ```
 npm start
+```
+
+### Build app
+
+```
+npm run build
 ```
 
 ## View app
@@ -76,7 +83,13 @@ npm install less-loader --save-dev
 npm install react-hot-loader --save-dev
 ```
 
-other npm
+postcss
+```
+npm install postcss-loader --save-dev
+npm install autoprefixer --save-dev
+```
+
+other
 ```
 npm install less --save-dev
 npm install bootstrap-less --save
