@@ -8,6 +8,6 @@ import 'bootstrap-less/bootstrap/bootstrap.less';
 import "./app.less"
 
 ReactDOM.render(
-	<Greeting name="World"/>,
+	<Greeting options={{value: "world"}}/>,
 	document.getElementById("app")
 );
